@@ -24,3 +24,6 @@ Auth::routes();
 Route::get('/home', [
     HomeController::class, 'index'
 ])->name('home');
+
+
+Route::resource('players', App\Http\Controllers\PlayerController::class);
